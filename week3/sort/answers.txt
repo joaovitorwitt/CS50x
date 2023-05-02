@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: In the worst case, the elements are arranged in decreasing order (reversed files)
+
+sort2 uses: Merge Sort
+
+How do you know?: Among the three sorts, the sort2 is the fastest when sorting through a list of random values (random files)
+
+sort3 uses: Selection Sort
+
+How do you know?: Even if the elements are sorted, the algorithm still needs to go through all the values in the array to confirm the values are indeed sorted (sorted files)
