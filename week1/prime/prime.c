@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+// prototype for prime function
 bool prime(int number);
 
 int main(void)

@@ -6,8 +6,6 @@ int main(void)
     // TODO: Prompt for start size
     int start_population;
 
-
-
     do
     {
         // get the intial population from the user
