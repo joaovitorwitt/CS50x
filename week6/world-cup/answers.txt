@@ -1,0 +1,21 @@
+Times:
+
+10 simulations: 0m0.030s
+100 simulations: 0m0.029s
+1000 simulations: 0m0.037s
+10000 simulations: 0m0.095s
+100000 simulations: 0m0.734s
+1000000 simulations: 0m7.149s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+When we have a large number of simulations, after 100000, the running time increases
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+I would say after 100000 simulations, that way we are able to visualize the percentage in a more precise way.
+Taking for instance a coin toss, it is a 50/50 game, but lets say that in the first 5 tosses the coin landed on heads 4 times and on tails 1 time.
+Someone might say that is a 80/20 game. But if we keep playing for a large number of rounds we will see that the numbers will start to line up.
