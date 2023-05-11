@@ -10,3 +10,7 @@ This repository contains a collection of problem sets, projects, and practice pr
 # Academic Honesty
 <p>Please, before anything take a look at the <a href="https://cs50.harvard.edu/x/2023/honesty/" target="_blank">Academic Honesty</a></p>
 
+# Disclaimer
+
+<p>This repository is for educational purposes only. It should only be used to explore different methods and approaches. It is highly important that you put it the effort to understand the material and come up with your own solutions.</p>
+
