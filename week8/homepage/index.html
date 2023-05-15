@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="header-wrapper">
+                <div class="logo">
+                    My Portfolio
+                </div>
+
+                <nav>
+                    <ul class="navbar">
+                        <li class="navlink">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li class="navlink">
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li class="navlink">
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                        <li class="navlink">
+                            <a href="#services">Services</a>
+                        </li>
+
+                        <li class="navlink">
+                            <a href="#blog">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- hero section -->
+            <section class="main-showcase">
+                <h1>My name is João Vitor Witt</h1>
+                <h2>I am a Full Stack Developer</h2>
+                <h3>This portfolio is still in development, please be patient, great things are coming. THis is just a sketch</h3>
+            </section>
+
+
+            <!-- services about -->
+            <section id="about" class="about">
+                <div class="about-wrapper">
+                    <h3>About Me</h3>
+                    <p>At this point you already know my name. I am 27 years old and I believe in taking care of myself. I started
+                    programming at the age of 16, after the pandemic started, and now 125 years later I am still on the grind.</p>
+
+                    <button class="btn"><a href="about.html">Learn more</a></button>
+                </div>
+            </section>
+
+
+            <!-- services section -->
+            <section id="services" class="services">
+                <h3>Services & Technologies</h3>
+
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <h4>HTML</h4>
+                    </div>
+
+                    <div class="card">
+                        <h4>CSS</h4>
+                    </div>
+
+                    <div class="card">
+                        <h4>JavaScript</h4>
+                    </div>
+
+                    <div class="card">
+                        <h4>Angular</h4>
+                    </div>
+
+                    <div class="card">
+                        <h4>Artificial Intelligence</h4>
+                    </div>
+
+                    <div class="card">
+                        <h4>Python</h4>
+                    </div>
+
+                </div>
+
+                <button class="btn"><a href="services.html">See more technologies</a></button>
+            </section>
+
+            <!-- blog section -->
+            <section class="the-blog" id="blog">
+
+                <h3>My blog</h3>
+                <p>Currently you can check out my articles <a href="https://www.programadorastuto.com" target="_blank">clicking here</a>, but as soon as possible I intend to move them to here, that way I can have my stuff all in one place, one could argue that this is a bad idea.</p>
+
+                <p>But for now, I will be linking some of my articles here</p>
+                <div class="blog-wrapper">
+                    <div class="blog">
+                        <div class="image">
+                            <h5>image a awesome image here</h5>
+                        </div>
+                        <div class="blog-info">
+                            <h4>How to become a software developer</h4>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="image">
+                            <!--random image here-->
+                            <h5>image a awesome image here</h5>
+                        </div>
+                        <div class="blog-info">
+                            <h4>Tips on productivity: change the way you work</h4>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="image">
+                            <!--random image here-->
+                            <h5>image an awesome image here</h5>
+                        </div>
+                        <div class="blog-info">
+                            <h4>Do You need math for programming? </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="btn"><a href="blog.html">See more articles</a></button>
+            </section>
+
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <h3>Let's get in touch</h3>
+
+                <div class="form-wrapper">
+                    <form>
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your email">
+                        <input type="submit" value="send">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+
+
+    <script>
+        const body = document.querySelector("body");
+        const headear = document.querySelector("header");
+        const input = document.querySelector("input[type=text]");
+
+        // TODO
+    </script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3 class="question">What is the real name of Saul Goodman? </h3>
+
+                <div class="first-location">
+                    <p></p>
+                </div>
+
+                <button class="choice">Charles McGill</button>
+
+                <button class="choice">Heisenberg</button>
+
+                <button class="choice">James McGill</button>
+
+                <button class="choice">Kid named finger</button>
+
+                <button class="choice">Waltuh</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 class="question">In American Psycho, to who did Paul Allen mistake Patrick Bateman?</h3>
+                <!-- TODO: Add free response question here -->
+
+                <div class="second-location">
+                    <p></p>
+                </div>
+
+                <input type="text">
+                <button class="check-answer">Check Answer</button>
+
+            </div>
+        </div>
+    </body>
+
+    <script>
+    // first part
+    const choices = document.querySelectorAll(".choice");
+    const firstLocation = document.querySelector(".first-location > p");
+
+
+    choices.forEach((choice) => choice.addEventListener('click', (e) => {
+
+        if (e.target.innerHTML === "James McGill") {
+            e.target.classList.add("correct")
+            firstLocation.style.color = "green";
+            firstLocation.innerHTML = "Correct";
+
+
+            setTimeout(() => {
+                e.target.classList.remove("correct");
+                firstLocation.innerHTML = "";
+            }, 1000)
+        }
+
+        else {
+            e.target.classList.add("wrong")
+            firstLocation.style.color = "red"
+            firstLocation.innerHTML = "Incorrect"
+
+            setTimeout(() => {
+                e.target.classList.remove("wrong")
+                firstLocation.innerHTML = "";
+            }, 1000)
+        }
+
+    }))
+
+    // second part
+    const input = document.querySelector("input[type=text]");
+    const checkAnswer = document.querySelector(".check-answer");
+    const secondLocation = document.querySelector(".second-location > p");
+
+    checkAnswer.addEventListener('click', (e) => {
+        let toLower = input.value.toLowerCase();
+
+        console.log(toLower)
+
+        if (toLower === "marcus halberstram") {
+            secondLocation.innerHTML = "Correct";
+            secondLocation.style.color = "green";
+            input.value = "";
+
+
+            setTimeout(() => {
+                secondLocation.innerHTML = ""
+            }, 1000)
+        }
+
+        else {
+            secondLocation.innerHTML = "Incorrect";
+            secondLocation.style.color = "red"
+            input.value = "";
+
+            setTimeout(() => {
+                secondLocation.innerHTML = ""
+
+            }, 1000)
+        }
+    })
+    </script>
+</html>
