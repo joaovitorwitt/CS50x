@@ -1,0 +1,15 @@
+Spotify Wrapped calculates an "Audio Aura" for each user
+— reading their prominent mood dictated by their tops songs and artists of the year
+
+#########################################
+
+average energy: 0.65906
+
+average danceability: 0.71646
+
+average valence: 0.48443
+
+According to the sources, the high values of energy and danceability mean Purple and Orange
+
+One could argue that two moods might not be sufficient to calculate a user's aurea, meaning that the user could have more than two moods.
+Perhaps colors are not the best way to predict this type of scenario
