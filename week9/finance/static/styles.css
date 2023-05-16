@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* light theme colors */
+    --primary-light-color-bg: #ffffff;
+    --secondary-light-color-bg: #f7f7f8;
+    --light-theme-text: #374151;
+
+    /* dark theme colors */
+    --primary-dark-color-bg: #343541;
+    --secondary-dark-color-bg: #3f414d;
+    --dark-theme-text: #ececf1;
+}
+
+
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+
+/* login page */
+
+.no-account-wrapper {
+    margin-top: 1rem;
+}
+
+.no-account {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.password-feature {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.password-feature > label {
+    margin-left: 10px;
+}
+
+/* theme toggle */

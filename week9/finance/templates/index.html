@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for purchase in purchases %}
+                <tr>
+                    <td class="text-start">{{ purchase['symbol'] }}</td>
+                    <td class="text-start">{{ purchase['name'] }}</td>
+                    <td class="text-end">{{ purchase['total_shares'] }}</td>
+                    <td class="text-end">{{ purchase['price'] | usd }}</td>
+                    <td class="text-end">{{ (purchase['total_shares'] * purchase['price']) | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Your account</td>
+                <td class="border-0 text-end">{{ user_current_cash | usd }}</td>
+            </tr>
+
+            <tr>
+                <!-- this total represents all the totals for each stock -->
+                <td class="border-0 fw-bold text-end" colspan="4">Total</td>
+                <td class="border-0 w-bold text-end">{{ full_total | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+
+{% endblock %}

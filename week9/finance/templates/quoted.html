@@ -1,0 +1,27 @@
+<!-- via POST -->
+
+<!-- this contain information about the desired stock that the user typed -->
+
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>{{ stock['name'] }}</td>
+                <td>{{ stock['price'] | usd }}</td>
+                <td>{{ stock['symbol'] }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
